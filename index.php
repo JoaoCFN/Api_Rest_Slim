@@ -6,9 +6,13 @@
 
     $app = new \Slim\App();
 
+    $app->get('/listar/produto', function(Request $request, Response $response, array $args){
+        return $response->getBody()->write("Teste de rota");
+    });
+
     // Passar parametro no caminho da url - pegamos os valores pela variavel args
     // $request->getQueryParams() serve para pegar os valores passados na URL da forma 'padrão'
-    $app->get('/produto/{nome}', function(Request $request, Response $response, array $args){
+    $app->get('/produto_teste/{nome}', function(Request $request, Response $response, array $args){
         /*
             As duas integorações servem para o seguinte motivo: 
             Caso o usuário não informe o limite, a variavel limite receberia nulo,
@@ -33,7 +37,35 @@
         return $response->getBody()->write("$limit Produtos do banco de dados com o nome {$nome}");
     });
 
-    
-    
+    $app->post('/produto', function(Request $request, Response $response, array $args){
+        $data = $request->getParsedBody();
+
+        $nome = $data['nome'] ?? '';
+        $preco = $data['preco'] ?? 0.00;
+
+        return $response->getBody()->write("(POST) Produto: $nome, Preço (R$): $preco");
+        die;
+    });
+
+    $app->put('/produto', function(Request $request, Response $response, array $args){
+        $data = $request->getParsedBody();
+
+        $nome = $data['nome'] ?? '';
+        $preco = $data['preco'] ?? 0.00;
+
+        return $response->getBody()->write("(PUT) Produto: $nome, Preço (R$): $preco");
+        die;
+    });
+
+    $app->delete('/produto', function(Request $request, Response $response, array $args){
+        $data = $request->getParsedBody();
+
+        $nome = $data['nome'] ?? '';
+        $preco = $data['preco'] ?? 0.00;
+
+        return $response->getBody()->write("(DELETE) Produto: $nome, Preço (R$): $preco");
+        die;
+    });
+
     $app->run();
 ?>
