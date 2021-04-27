@@ -4,7 +4,26 @@
 
     require_once "vendor/autoload.php";
 
-    $app = new \Slim\App();
+    // Configuração para habilitar os detalhes do erro no Slim
+    $configuration = [
+        'settings' => [
+            'displayErrorDetails' => true,
+        ],
+    ];
+
+    $configuration = new \Slim\Container($configuration);
+
+    // Middleware
+    // Funções de primeira classe
+    $middleware01 = function(Request $request, Response $response, $next): Response{
+        $response->getBody()->write('Dentro do middleware 01 <br>');
+        $response = $next($request, $response);
+        $response->getBody()->write('Dentro do middleware 02 <br>');
+
+        return $response;
+    };
+
+    $app = new \Slim\App($configuration);
 
     $app->get('/listar/produto', function(Request $request, Response $response, array $args){
         return $response->getBody()->write("Teste de rota");
@@ -45,7 +64,8 @@
 
         return $response->getBody()->write("(POST) Produto: $nome, Preço (R$): $preco");
         die;
-    });
+    })->add($mid01);
+    // O add nesse caso serve para adicionar um middleware
 
     $app->put('/produto', function(Request $request, Response $response, array $args){
         $data = $request->getParsedBody();
