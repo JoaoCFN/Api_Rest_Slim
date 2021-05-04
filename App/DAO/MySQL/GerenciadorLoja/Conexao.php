@@ -17,13 +17,12 @@
             $dsn = "mysql:host={$host};dbname={$dbName};port={$port}";
 
             $this->pdo = new \PDO($dsn, $username, $password);
-            
+
             // Lançar excessões quando der algum erro na manipulação do banco
             $this->pdo->setAttribute(
                 \PDO::ATTR_ERRMODE,
                 \PDO::ERRMODE_EXCEPTION
             );
         }
-
     }
 ?>
