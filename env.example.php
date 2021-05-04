@@ -1,4 +1,9 @@
 <?php 
     putenv('DISPLAY_ERRORS_DETAILS='. true);
 
+    putenv('GERENCIADOR_LOJA_MYSQL_HOST=');
+    putenv('GERENCIADOR_LOJA_MYSQL_DBNAME=');
+    putenv('GERENCIADOR_LOJA_MYSQL_USER=');
+    putenv('GERENCIADOR_LOJA_MYSQL_PASSWORD=');
+    putenv('GERENCIADOR_LOJA_MYSQL_PORT=');
 ?>

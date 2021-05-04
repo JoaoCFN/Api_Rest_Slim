@@ -1,6 +1,7 @@
 <?php 
     namespace App\Controllers;
 
+    use App\DAO\MySQL\GerenciadorLoja\LojasDAO;
     use Psr\Http\Message\ResponseInterface as Response;
     use Psr\Http\Message\ServerRequestInterface as Request; 
 
