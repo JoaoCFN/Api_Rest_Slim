@@ -49,11 +49,11 @@
         {
             $query = "UPDATE produtos 
                     SET 
-                        loja_id = :lojaId,
+                        loja_id = :loja_id,
                         nome = :nome,
                         preco = :preco,
                         quantidade = :quantidade
-                WHERE id = :id
+                WHERE id = :id 
             ";
 
             $statement = $this->pdo->prepare($query);

@@ -77,6 +77,8 @@ class ComposerStaticInit91c441e1d2ee746a3ab7d5534cd2cecb
         'App\\DAO\\MySQL\\GerenciadorLoja\\Conexao' => __DIR__ . '/../..' . '/App/DAO/MySQL/GerenciadorLoja/Conexao.php',
         'App\\DAO\\MySQL\\GerenciadorLoja\\LojasDAO' => __DIR__ . '/../..' . '/App/DAO/MySQL/GerenciadorLoja/LojasDAO.php',
         'App\\DAO\\MySQL\\GerenciadorLoja\\ProdutosDAO' => __DIR__ . '/../..' . '/App/DAO/MySQL/GerenciadorLoja/ProdutosDAO.php',
+        'App\\Models\\MySQL\\GerenciadorLoja\\LojaModel' => __DIR__ . '/../..' . '/App/Models/MySQL/GerenciadorLoja/LojaModel.php',
+        'App\\Models\\MySQL\\GerenciadorLoja\\ProdutoModel' => __DIR__ . '/../..' . '/App/Models/MySQL/GerenciadorLoja/ProdutoModel.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'FastRoute\\BadRouteException' => __DIR__ . '/..' . '/nikic/fast-route/src/BadRouteException.php',
         'FastRoute\\DataGenerator' => __DIR__ . '/..' . '/nikic/fast-route/src/DataGenerator.php',
