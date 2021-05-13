@@ -72,7 +72,11 @@ class ComposerStaticInit91c441e1d2ee746a3ab7d5534cd2cecb
     );
 
     public static $classMap = array (
-        'App\\Controllers\\ProductController' => __DIR__ . '/../..' . '/App/Controllers/ProductController.php',
+        'App\\Controllers\\LojaController' => __DIR__ . '/../..' . '/App/Controllers/LojaController.php',
+        'App\\Controllers\\ProdutoController' => __DIR__ . '/../..' . '/App/Controllers/ProdutoController.php',
+        'App\\DAO\\MySQL\\GerenciadorLoja\\Conexao' => __DIR__ . '/../..' . '/App/DAO/MySQL/GerenciadorLoja/Conexao.php',
+        'App\\DAO\\MySQL\\GerenciadorLoja\\LojasDAO' => __DIR__ . '/../..' . '/App/DAO/MySQL/GerenciadorLoja/LojasDAO.php',
+        'App\\DAO\\MySQL\\GerenciadorLoja\\ProdutosDAO' => __DIR__ . '/../..' . '/App/DAO/MySQL/GerenciadorLoja/ProdutosDAO.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'FastRoute\\BadRouteException' => __DIR__ . '/..' . '/nikic/fast-route/src/BadRouteException.php',
         'FastRoute\\DataGenerator' => __DIR__ . '/..' . '/nikic/fast-route/src/DataGenerator.php',

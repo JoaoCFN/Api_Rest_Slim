@@ -6,7 +6,11 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'App\\Controllers\\ProductController' => $baseDir . '/App/Controllers/ProductController.php',
+    'App\\Controllers\\LojaController' => $baseDir . '/App/Controllers/LojaController.php',
+    'App\\Controllers\\ProdutoController' => $baseDir . '/App/Controllers/ProdutoController.php',
+    'App\\DAO\\MySQL\\GerenciadorLoja\\Conexao' => $baseDir . '/App/DAO/MySQL/GerenciadorLoja/Conexao.php',
+    'App\\DAO\\MySQL\\GerenciadorLoja\\LojasDAO' => $baseDir . '/App/DAO/MySQL/GerenciadorLoja/LojasDAO.php',
+    'App\\DAO\\MySQL\\GerenciadorLoja\\ProdutosDAO' => $baseDir . '/App/DAO/MySQL/GerenciadorLoja/ProdutosDAO.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'FastRoute\\BadRouteException' => $vendorDir . '/nikic/fast-route/src/BadRouteException.php',
     'FastRoute\\DataGenerator' => $vendorDir . '/nikic/fast-route/src/DataGenerator.php',
