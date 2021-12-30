@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '6d78f0c0c3c745bd1e4587c2255dcf0c28bb44d1',
+    'reference' => '81d7dc4563b2583443dd5ca8e22ba19594fab9a3',
     'name' => '__root__',
   ),
   'versions' => 
@@ -42,7 +42,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '6d78f0c0c3c745bd1e4587c2255dcf0c28bb44d1',
+      'reference' => '81d7dc4563b2583443dd5ca8e22ba19594fab9a3',
     ),
     'container-interop/container-interop' => 
     array (
@@ -52,6 +52,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '79cbf1341c22ec75643d841642dd5d6acd83bdb8',
+    ),
+    'firebase/php-jwt' => 
+    array (
+      'pretty_version' => 'v5.5.1',
+      'version' => '5.5.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '83b609028194aa042ea33b5af2d41a7427de80e6',
     ),
     'nikic/fast-route' => 
     array (
@@ -123,6 +132,15 @@ private static $installed = array (
       ),
       'reference' => '2296f45510945530b9dceb8bcedb5cb84d40c5f5',
     ),
+    'psr/log' => 
+    array (
+      'pretty_version' => '1.1.4',
+      'version' => '1.1.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'd49695b909c3b7628b6289db5479a1c204601f11',
+    ),
     'slim/slim' => 
     array (
       'pretty_version' => '3.0.0',
@@ -158,6 +176,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '18e49c18f5648b05bb6169d166ccb6f797f0fbc4',
+    ),
+    'tuupola/slim-jwt-auth' => 
+    array (
+      'pretty_version' => '3.5.2',
+      'version' => '3.5.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '0145b313b8f766a2fb2f88e17008abe90046a646',
     ),
   ),
 );

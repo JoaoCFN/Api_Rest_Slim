@@ -6,4 +6,5 @@
     putenv('GERENCIADOR_LOJA_MYSQL_USER=');
     putenv('GERENCIADOR_LOJA_MYSQL_PASSWORD=');
     putenv('GERENCIADOR_LOJA_MYSQL_PORT=');
+    putenv('JWT_SECRET_KEY=');
 ?>
