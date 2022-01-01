@@ -2,18 +2,22 @@
     use function src\basicAuth;
     use function src\jwtAuth;
     use function src\slimConfiguration;
+    use function src\exceptions;
 
     use App\Controllers\{
         LojaController, 
         ProdutoController,
-        AuthController
+        AuthController,
+        ExceptionController
     };
+    use App\Middlewares\ExceptionExample;
     use App\Middlewares\JwtDateTimeMiddleware;
 
     $app = new \Slim\App(slimConfiguration());
 
-    $app->post('/login', AuthController::class.':login');
+    $app->get('/exception', ExceptionController::class.':test');
 
+    $app->post('/login', AuthController::class.':login');
     $app->post('/refresh_token', AuthController::class.':refreshToken');
 
     $app
